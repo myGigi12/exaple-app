@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class="d-flex justify-content-center my-5 bg-secondary p-2">
-        <a href="{{ route ('post.add') }} " class="btn btn-light me-2 ">Add Post</a>
+        <a href="{{ route ('add-post') }} " class="btn btn-light me-2 ">Add Post</a>
         <a href="{{ route ('all-post') }} " class="btn btn-light me-2 ">All Post</a>
         <a href="{{ route ('message') }} " class="btn btn-light me-2 ">Send message</a>
+        <a href="{{ route ('message.store') }} " class="btn btn-light me-2 ">All message</a>
 
     </div>
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +31,13 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/add-post', [PostController::class, 'add'])->name('add-post');
+Route::get('/all-post', [PostController::class, 'store'])->name('all-post');
+Route::get('/post.store', [PostController::class, 'store'])->name('post.store');
+
+Route::post('/message', [MessageController::class, 'message'])->name('message');
+Route::post('/all-message', [MessageController::class, 'message'])->name('message');
+Route::get('/message.store', [MessageController::class, 'store'])->name('message.store');
+
+
