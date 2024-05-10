@@ -379,9 +379,16 @@
                         <li class="menu-title mt-2">Apps</li>
 
                         <li>
-                            <a href="apps-calendar.html">
+                            <a href="{{route('admin.category.add')}}">
                                 <i class="mdi mdi-calendar-blank-outline"></i>
-                                <span> Calendar </span>
+                                <span>Add Category</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{route('admin.product.add')}}">
+                                <i class="mdi mdi-calendar-blank-outline"></i>
+                                <span>Add Product</span>
                             </a>
                         </li>
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Message;
 use App\Models\post;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,7 @@ class MessageController extends Controller
         $message = $request->message;
         $reciever = $request->receiver;
 
-        post::create ([
+        Message::create ([
             'sender' => $sender,
             'receiver' => $reciever,
             'message' => $message,
@@ -27,10 +28,4 @@ class MessageController extends Controller
 
     }
 
-    function posts() {
-        $posts = Post::all();
-
-        return view('all-posts', compact('posts'));
-
-    }
 }

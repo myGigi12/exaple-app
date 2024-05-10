@@ -32,4 +32,7 @@ class PostController extends Controller
         return view('all-posts', compact('posts'));
 
     }
+
+    
+
 }

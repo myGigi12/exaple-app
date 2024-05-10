@@ -6,7 +6,7 @@
     <div style="margin: auto; hight:5rem">
         <h1 class="align-center">message</h1>
 
-        <form action="{{ route ('message') }} " method="POST"> @csrf
+        <form action="{{ route ('message.store') }} " method="POST"> @csrf
             <div class="row mb-3">
                 <label for="name" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
